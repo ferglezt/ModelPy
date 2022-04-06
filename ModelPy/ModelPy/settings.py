@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modelfest2022.apps.Modelfest2022Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
