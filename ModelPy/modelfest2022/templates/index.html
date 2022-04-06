@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <title>{% block title %}Modelfest 2022{% endblock %}</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -16,7 +16,7 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+                <div class="sidebar-heading border-bottom bg-light">Modelfest 2022</div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
@@ -52,6 +52,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
+                    {% block content %} 
                     <h1 class="mt-4">Simple Sidebar</h1>
                     <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
                     <p>
@@ -61,6 +62,7 @@
                         <code>#sidebarToggle</code>
                         ID which will toggle the menu when clicked.
                     </p>
+                    {% endblock %}
                 </div>
             </div>
         </div>
